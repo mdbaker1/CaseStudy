@@ -2,10 +2,161 @@
 <html>
 <head>
 <meta charset="utf-8">
+<style>
+body {
+	position: relative;
+}
+#one {
+	margin-top: 70px;
+}
+#boys {
+	display: block;
+}
+	#girls{
+		display: none;
+	}
+</style>
 <title>Roster</title>
 </head>
 
 <body>
-ROSTER PAGE UNDER CONSTRUCTION
+<div class="container">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default bg-faded navbar-fixed-top" id="navbar-example boys">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item"> <a class="nav-link" href="#one" onclick="boys()">Boys</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#two" onclick="girls()">Girls</a> </li>
+  
+    </ul>
+</nav>
+<div class="container">
+    <h1>2017 Boys Roster</h1>
+    <table class="table table-striped" id="boys">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Player</th>
+                <th>Year</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">00/5</th>
+                <td>*Kaleb Hooper</td>
+                <td>Sr.</td>
+                <td>GK</td>
+            </tr>
+            <tr>
+                <th scope="row">1/24</th>
+                <td>Tanner Wittrock</td>
+                <td>Jr.</td>
+                <td>GK</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>*Christian Richards</td>
+                <td>Sr.</td>
+                <td>D/F</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Manny Del Rio-Vasquez</td>
+                <td>Jr.</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Nick Wright</td>
+                <td>Sr.</td>
+                <td>M</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped" id="girls">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Player</th>
+                <th>Year</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">00/5</th>
+                <td>*Britny Baker</td>
+                <td>Sr.</td>
+                <td>GK</td>
+            </tr>
+            <tr>
+                <th scope="row">1/24</th>
+                <td>Alyssa Long</td>
+                <td>Jr.</td>
+                <td>GK</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Haleigh Dearborn</td>
+                <td>Sr.</td>
+                <td>D/F</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Katie Brandon</td>
+                <td>Jr.</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Skyler Hough</td>
+                <td>Sr.</td>
+                <td>M</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> 
+<script>
+
+	function boys() {
+    var x = document.getElementById('boys');
+	var y = document.getElementById('girls');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.style.display = 'none';
+    } else {
+       x.style.display = 'block';
+		y.style.display = 'none';
+    }
+} 
+	function girls() {
+    var x = document.getElementById('girls');
+	var y = document.getElementById('boys');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+		y.style.display = 'none';
+    }
+} 
+    </script>
+</body>
+</html>
+</div>
 </body>
 </html>
