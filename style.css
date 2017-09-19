@@ -35,3 +35,14 @@
 			height: auto;
 		}
 	}
+
+	/* album styling @Adam */
+	.largeImage {
+		margin: auto;
+		width: 50%;
+		padding-top: 8px;
+	}
+	.thumbnails {
+		padding-top: 8px;
+		border: 2px, red;
+	}
