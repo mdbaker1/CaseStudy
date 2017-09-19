@@ -1,18 +1,84 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Album</title>
+	<title>Album</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-ALBUM PAGE UNDER CONSTRUCTION
-
-<script>
-	var imageArray = 
-		["images/IMG_0586.jpg","images/IMG_1278.jpg","images/IMG_1407.jpg",
-  		"images/IMG_9571.jpg","images/IMG_9849.jpg"];
-</script>
-
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="30px" height="30px"></a> </div>
+         <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="roster.html">Rosters</a></li>
+               <li><a href="schedule.html">Schedules</a></li>
+               <li><a href="records.html">Records</a></li>
+               <li><a href="album.html">Album</a></li>
+               <li><a href="coaches.html">Coaches</a></li>
+               <li><a href="directions.html">Directions</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!--<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
+				</ul>--> 
+         </div>
+      </div>
+	</nav>
+	<div class="container-fluid text-center" id="background">
+		<div class="row content">
+         <div class="col-sm-2 sidenav">
+			</div>
+			<div class="col-sm-8 text-left" id="album">
+				<div class="largeImage" id="largeImage">
+					<img src="images/IMG_1.jpg" width="525" height="350" id="largePicture"/>
+				</div>
+			<div class="thumbnails">
+				<img src="images/IMG_1.jpg" width="100" height="67" id="img1" onclick="changeImage('img1')"/>
+				<img src="images/IMG_2.jpg" width="100" height="67" id="img2" onclick="changeImage('img2')"/>
+				<img src="images/IMG_3.jpg" width="100" height="67" id="img3" onclick="changeImage('img3')"/>
+				<img src="images/IMG_4.jpg" width="100" height="67" id="img4" onclick="changeImage('img4')"/>
+				<img src="images/IMG_5.jpg" width="100" height="67" id="img5" onclick="changeImage('img5')"/>
+			</div>
+			</div>
+			<div class="col-sm-2 sidenav">
+            <div class="well">
+                <p>Twitter Feed</p>
+            </div>
+        </div>
+    </div>
+	</div>
+	<script>
+		var imageArray = 
+			["images/IMG_1.jpg","images/IMG_2.jpg","images/IMG_3.jpg",
+			 "images/IMG_4.jpg","images/IMG_5.jpg"];
+			 
+		function changeImage(img) {
+			switch (img) {
+				case "img1":
+					document.getElementById("largePicture").src = imageArray[0];
+					break;
+				case "img2":
+					document.getElementById("largePicture").src = imageArray[1];
+					break;
+				case "img3":
+					document.getElementById("largePicture").src = imageArray[2];
+					break;
+				case "img4":
+					document.getElementById("largePicture").src = imageArray[3];
+					break;
+				case "img5":
+					document.getElementById("largePicture").src = imageArray[4];
+					break;
+			}
+		}
+	</script>
 </body>
 </html>
