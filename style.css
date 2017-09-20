@@ -38,8 +38,10 @@
 
 	/* album styling @Adam */
 	.largeImage {
-		margin: auto;
-		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		
+		
 		padding-top: 8px;
 	}
 	.thumbnails {
