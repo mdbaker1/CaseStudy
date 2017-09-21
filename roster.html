@@ -36,8 +36,8 @@ body {
 
 <nav class="navbar navbar-default bg-faded navbar-fixed-top" id="navbar-example boys">
     <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item"> <a class="nav-link" href="#one" onclick="boys()">Boys</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#two" onclick="girls()">Girls</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#one" onclick="determineGenderTable('boys')">Boys</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#two" onclick="determineGenderTable('girls')">Girls</a> </li>
   
     </ul>
 </nav>
@@ -130,31 +130,7 @@ body {
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> 
-<script>
-
-	function boys() {
-    var x = document.getElementById('boys');
-	var y = document.getElementById('girls');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-		y.style.display = 'none';
-    } else {
-       x.style.display = 'block';
-		y.style.display = 'none';
-    }
-} 
-	function girls() {
-    var x = document.getElementById('girls');
-	var y = document.getElementById('boys');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-		y.style.display = 'none';
-    } else {
-        x.style.display = 'block';
-		y.style.display = 'none';
-    }
-} 
-    </script>
+<script src="jscript.js"></script>
 </body>
 </html>
 </div>
