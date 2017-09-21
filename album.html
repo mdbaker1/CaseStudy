@@ -17,28 +17,37 @@
             <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="30px" height="30px"></a> </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="roster.html">Rosters</a></li>
                 <li><a href="schedule.html">Schedules</a></li>
                 <li><a href="records.html">Records</a></li>
-                <li><a href="album.html">Album</a></li>
+                <li class="active"><a href="#">Album</a></li>
                 <li><a href="coaches.html">Coaches</a></li>
                 <li><a href="directions.html">Directions</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <!--<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
-				</ul>--> 
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
+			</ul>--> 
         </div>
     </div>
 </nav>
 <div class="container-fluid text-center" id="background">
     <div class="row content">
-        <div class="col-sm-2 sidenav"> </div>
+        <div class="col-sm-2 sidenav">
+		</div>
         <div class="col-sm-8" id="album">
-            <div class="largeImage" id="largeImage"> <img src="images/IMG_1.jpg" id="largePicture" width="55%"/> </div>
-            <div class="thumbnails"> <img src="images/IMG_1.jpg" width="100" height="67" id="img1" onclick="changeImage('img1')"/> <img src="images/IMG_2.jpg" width="100" height="67" id="img2" onclick="changeImage('img2')"/> <img src="images/IMG_3.jpg" width="100" height="67" id="img3" onclick="changeImage('img3')"/> <img src="images/IMG_4.jpg" width="100" height="67" id="img4" onclick="changeImage('img4')"/> <img src="images/IMG_5.jpg" width="100" height="67" id="img5" onclick="changeImage('img5')"/> </div>
-        </div>
+            <div class="largeImage" id="largeImage"> 
+				<img src="images/IMG_1.jpg" id="largePicture" width="55%"/> 
+			</div>
+            <div class="thumbnails"> 
+				<img src="images/IMG_1.jpg" width="100" height="67" id="img1" onclick="changeImage('img1')"/> 
+				<img src="images/IMG_2.jpg" width="100" height="67" id="img2" onclick="changeImage('img2')"/> 
+				<img src="images/IMG_3.jpg" width="100" height="67" id="img3" onclick="changeImage('img3')"/> 
+				<img src="images/IMG_4.jpg" width="100" height="67" id="img4" onclick="changeImage('img4')"/> 
+				<img src="images/IMG_5.jpg" width="100" height="67" id="img5" onclick="changeImage('img5')"/> 
+			</div>
+		</div>
         <div class="col-sm-2 sidenav">
             <div class="well">
                 <p>Twitter Feed</p>
@@ -46,30 +55,9 @@
         </div>
     </div>
 </div>
-<script>
-		var imageArray = 
-			["images/IMG_1.jpg","images/IMG_2.jpg","images/IMG_3.jpg",
-			 "images/IMG_4.jpg","images/IMG_5.jpg"];
-			 
-		function changeImage(img) {
-			switch (img) {
-				case "img1":
-					document.getElementById("largePicture").src = imageArray[0];
-					break;
-				case "img2":
-					document.getElementById("largePicture").src = imageArray[1];
-					break;
-				case "img3":
-					document.getElementById("largePicture").src = imageArray[2];
-					break;
-				case "img4":
-					document.getElementById("largePicture").src = imageArray[3];
-					break;
-				case "img5":
-					document.getElementById("largePicture").src = imageArray[4];
-					break;
-			}
-		}
-	</script>
+<footer class="container-fluid text-center">
+    <p>&copy;2017</p>
+</footer>
+<script src="jscript.js"></script>
 </body>
 </html>
